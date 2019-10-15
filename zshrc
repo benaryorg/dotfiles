@@ -79,6 +79,7 @@ export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 test -e ~/.nix-profile/etc/profile.d/nix.sh && source ~/.nix-profile/etc/profile.d/nix.sh
 export PATH="${HOME}/.local/sbin:${HOME}/.local/bin:${HOME}/.local/usr/sbin:${HOME}/.local/usr/bin:${HOME}/.nix-profile/bin:${HOME}/.cargo/bin/:/usr/games/:/usr/games/bin/:${PATH}"
 
+export SHELL="$(which zsh)"
 export VISUAL="$(which vi)"
 export EDITOR="$(which vi)"
 
