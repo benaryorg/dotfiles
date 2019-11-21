@@ -4,6 +4,7 @@ export HISTSIZE=1000000000
 export SAVEHIST=1000000000
 export INC_APPEND_HISTORY=1000000000
 export HISTFILE=~/.histfile
+export IFS=$'\n'
 
 export TIMEFMT+=" max RSS %M"
 
