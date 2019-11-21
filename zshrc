@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
-export HISTSIZE=1000000000
-export SAVEHIST=1000000000
-export INC_APPEND_HISTORY=1000000000
-export HISTFILE=~/.histfile
-export IFS=$'\n'
+HISTSIZE=1000000000
+SAVEHIST=1000000000
+INC_APPEND_HISTORY=1000000000
+HISTFILE=~/.histfile
+IFS=$'\n'
 
-export TIMEFMT+=" max RSS %M"
+TIMEFMT+=" max RSS %M"
 
 test -r /etc/profile && source /etc/profile
 
