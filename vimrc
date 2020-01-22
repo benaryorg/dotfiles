@@ -26,7 +26,7 @@ Plug 'dpc/vim-smarttabs'
 call plug#end()
 
 set magic
-set textwidth=100
+set textwidth=10000
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab autoindent copyindent
 set mouse=a clipboard=unnamedplus
 set nu background=dark hidden
