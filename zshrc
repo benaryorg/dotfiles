@@ -44,7 +44,7 @@ function darwin()
 
 for mod in compinit compaudit promptinit colors;do
 	autoload -U "${mod}"
-	"${mod}"
+	"${mod}" 2>&1 >/dev/null
 done
 
 bindkey -v
