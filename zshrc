@@ -42,10 +42,10 @@ function darwin()
 	test "${PLATFORM}" = "Darwin"
 }
 
-for mod in compinit compaudit promptinit colors;do
-	autoload -U "${mod}"
-	"${mod}" 2>&1 >/dev/null
-done
+autoload -U compinit && compinit -D 2>&1 >/dev/null
+autoload -U compaudit && compaudit 2>&1 >/dev/null
+autoload -U promptinit && promptinit 2>&1 >/dev/null
+autoload -U colors && colors 2>&1 >/dev/null
 
 bindkey -v
 bindkey "^I" complete-word
