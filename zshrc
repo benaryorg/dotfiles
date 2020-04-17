@@ -70,6 +70,7 @@ zstyle ':completion:*' list-colors "rs=0" "di=01;34" "ln=01;36" "mh=00" "pi=40;3
 setopt no_automenu
 setopt bashautolist
 setopt interactive_comments
+setopt histignorespace
 
 export LESSOPEN=""
 export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
