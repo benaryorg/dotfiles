@@ -23,6 +23,13 @@ Plug 'rodjek/vim-puppet'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'dpc/vim-smarttabs'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-afterimage'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-characterize'
+Plug 'chaoren/vim-wordmotion'
 call plug#end()
 
 set magic
@@ -33,7 +40,6 @@ set nu background=dark hidden
 set hlsearch
 set ruler cursorline
 set foldmethod=indent foldlevel=9999 foldcolumn=3
-set iskeyword-=_ 
 "set cryptmethod=blowfish2
 syntax on
 
