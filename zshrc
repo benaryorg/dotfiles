@@ -85,6 +85,8 @@ export SHELL="$(which zsh)"
 export VISUAL="$(which vi)"
 export EDITOR="$(which vi)"
 
+export XDG_RUNTIME_DIR=~/.local/run
+
 function lxcrunit()
 {
 	local image="${1:-images:alpine/edge}"
