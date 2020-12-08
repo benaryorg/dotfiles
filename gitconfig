@@ -14,3 +14,5 @@
 	extendedRegexp = true
 [alias]
 	p = ! git pull && git push
+[merge]
+	ff = only
