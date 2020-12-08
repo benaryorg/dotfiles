@@ -131,8 +131,6 @@ darwin && alias clip="pbcopy"
 darwin && alias j="ssh -t ${JUMPHOST} -- \"bash -c \\\"tmux -L tmux a || tmux -L tmux new-session -D bash\\\"\""
 ! darwin && alias j="ssh -t ${JUMPHOST}"
 
-openbsd && alias sudo="doas"
-
 alias xterm="xterm -bg black -fg white"
 alias xmpp="openmux xmpp profanity"
 alias sumux="sudo tmux new-session -c ~root"
