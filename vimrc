@@ -30,6 +30,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-characterize'
 Plug 'chaoren/vim-wordmotion'
+Plug 'junegunn/vim-peekaboo'
 call plug#end()
 
 set magic
