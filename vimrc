@@ -14,7 +14,6 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'pbrisbin/vim-syntax-shakespeare'
-Plug 'racer-rust/vim-racer'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -49,7 +48,6 @@ filetype plugin indent off
 
 inoremap <C-@> <C-x><C-o>
 
-let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 let g:neocomplete_enable_at_startup = 1
 
 let g:haskellmode_completion_ghc = 0
