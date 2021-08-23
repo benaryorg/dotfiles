@@ -35,6 +35,7 @@ call plug#end()
 set magic
 set textwidth=10000
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab autoindent copyindent
+set formatoptions+=ro
 set mouse=a clipboard=unnamedplus
 set nu background=dark hidden
 set hlsearch
@@ -74,6 +75,7 @@ let g:syntastic_check_on_wq = 0
 au BufRead,BufNewFile *.asm set filetype=nasm
 au BufRead,BufNewFile *.nix set filetype=yaml
 au BufRead,BufNewFile *.pp  set filetype=puppet
+autocmd Filetype rust set comments^=:///
 
 let g:rainbowbrackets_enable_round_brackets = 1
 let g:rainbowbrackets_enable_curly_brackets = 1
