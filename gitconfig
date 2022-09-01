@@ -16,3 +16,10 @@
 	p = ! git pull && git push
 [merge]
 	ff = only
+[core]
+	autocrlf = false
+	eol = lf
+[log]
+	date = iso
+[init]
+	defaultBranch = main
