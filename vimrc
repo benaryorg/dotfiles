@@ -74,6 +74,8 @@ let g:syntastic_check_on_wq = 0
 
 au BufRead,BufNewFile *.asm set filetype=nasm
 au BufRead,BufNewFile *.nix set filetype=yaml
+au BufRead,BufNewFile *.yaml set filetype=yaml
+au BufRead,BufNewFile *.yml set filetype=yaml
 au BufRead,BufNewFile *.pp  set filetype=puppet
 autocmd Filetype rust set comments^=:///
 
@@ -87,6 +89,7 @@ augroup vimrc-rainbowbrackets
 	autocmd FileType haskell let b:rainbowbrackets_enable_angle_brackets = 0
 	autocmd FileType haskell let b:rainbowbrackets_enable_curly_brackets = 0
 augroup END
+autocmd FileType yaml set tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
