@@ -42,7 +42,7 @@ set hlsearch
 set ruler cursorline
 set foldmethod=indent foldlevel=9999 foldcolumn=3
 "set cryptmethod=blowfish2
-syntax on
+syntax enable
 
 " don't override that. seriously
 filetype plugin indent off
