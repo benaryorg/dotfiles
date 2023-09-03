@@ -1,7 +1,7 @@
 [user]
 	email = binary@benary.org
 	name = benaryorg
-	signingkey = 666854374A5D88437FA46B447A06724E5B00E546
+	signingkey = 804B6CB8AED561D93DAD4DC5E2F22C5EDF20119D
 [commit]
 	gpgsign = on
 [github]
