@@ -42,6 +42,7 @@ set nu background=dark hidden
 set hlsearch
 set ruler cursorline
 set foldmethod=indent foldlevel=9999 foldcolumn=3
+set directory=~/.cache/vim/swp//
 "set cryptmethod=blowfish2
 syntax enable
 
