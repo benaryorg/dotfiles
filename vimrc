@@ -89,7 +89,7 @@ augroup vimrc-rainbowbrackets
 	autocmd FileType haskell let b:rainbowbrackets_enable_angle_brackets = 0
 	autocmd FileType haskell let b:rainbowbrackets_enable_curly_brackets = 0
 augroup END
-autocmd FileType yaml set tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
+autocmd FileType yaml set tabstop=2 softtabstop=2 shiftwidth=2 expandtab copyindent
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
