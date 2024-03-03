@@ -35,6 +35,7 @@ call plug#end()
 set magic
 set textwidth=10000
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab autoindent copyindent
+set backspace=indent,eol,start
 set formatoptions+=ro
 set mouse=a clipboard=unnamedplus
 set nu background=dark hidden
