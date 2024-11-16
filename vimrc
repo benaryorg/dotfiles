@@ -30,6 +30,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-characterize'
 Plug 'chaoren/vim-wordmotion'
 Plug 'junegunn/vim-peekaboo'
+Plug 'bfrg/vim-jqplay'
+Plug 'bfrg/vim-jq'
 call plug#end()
 
 set magic
@@ -64,6 +66,8 @@ let g:table_mode_corner="|"
 
 let g:pandoc#formatting#mode = "h"
 let g:pandoc#spell#enabled = 0
+
+let g:jqplay = { 'autocmds': ['TextChanged', 'TextChangedI', 'InsertLeave'], 'delay': 500 }
 
 set laststatus=2
 set statusline+=%#warningmsg#
