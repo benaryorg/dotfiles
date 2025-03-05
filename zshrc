@@ -85,30 +85,6 @@ export SHELL="$(which zsh)"
 export VISUAL="$(which vi)"
 export EDITOR="$(which vi)"
 
-function lxcrunit()
-{
-	local image="${1:-images:alpine/edge}"
-
-	lxc exec \
-		"$(
-			lxc launch -e ${image} 2> /dev/null \
-				| perl -ne "m{^Starting (.+)\$} && print \"\$1\\n\"" \
-				| head -n 1
-		)" \
-		-- \
-		sh -c "su -l;halt || su -l"
-}
-
-function openmux()
-{
-	test "${#}" -ge 1 || return 1
-
-	readonly name="${1}"
-	shift
-
-	tmux new-session -A -s "${name}" "${@}"
-}
-
 darwin && export JUMPHOST="jumpblu"
 ! darwin && export JUMPHOST="shell.cloud.bsocat.net"
 
