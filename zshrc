@@ -102,8 +102,7 @@ function repo()
 	cd "$dest"
 }
 
-darwin && export JUMPHOST="jumpblu"
-! darwin && export JUMPHOST="shell.cloud.bsocat.net"
+export JUMPHOST="shell.cloud.bsocat.net"
 
 gnu && alias ls="ls --color -F"
 bsd && alias ls="ls -F"
@@ -119,9 +118,6 @@ openbsd && test -e "$(which colorls)" && alias ls="$(which colorls) -FG"
 darwin && alias clip="pbcopy"
 ! darwin && alias clip="xclip -in -selection clipboard"
 
-darwin && alias j="ssh -t ${JUMPHOST} -- \"bash -c \\\"tmux -L tmux a || tmux -L tmux new-session -D bash\\\"\""
-! darwin && alias j="ssh -t ${JUMPHOST}"
-
 alias xterm="xterm -bg black -fg white"
 alias xmpp="openmux xmpp profanity"
 alias sumux="sudo tmux new-session -c ~root"
@@ -130,6 +126,7 @@ alias mktemp="mktemp -p ${HOME}/.local/tmp"
 alias tmp="cd \$(mktemp -d)"
 alias work="openmux work"
 alias note="cat > /dev/null"
+alias j="ssh -t ${JUMPHOST}"
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
