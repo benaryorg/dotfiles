@@ -85,6 +85,23 @@ export SHELL="$(which zsh)"
 export VISUAL="$(which vi)"
 export EDITOR="$(which vi)"
 
+function repo()
+{
+	local repo="${1?"no repo provided"}" || return 1
+	local raw_dirs=( ~/Documents/*/"$repo"/git(N) )
+	test "${#raw_dirs}" = 0 && { printf "unable to find directory for repo '%s'\\n" "$repo"; return 1 }
+	test "${#raw_dirs}" = 1 || { printf "ambigious directory for repo '%s':" "$repo"; printf " '%s'" "${raw_dirs[*]}"; return 1 }
+	local dir="${raw_dirs%/git}"
+	local branch="${2-main}"
+	local src="${3-origin/main}"
+	local dest="${dir}/${branch}"
+
+	test -e "$dest" && cd "$dest" && return 0
+	test "x${NOFETCH+x}" = xx || git --git-dir "$dir/git" fetch "${src%%/*}" "${src#*/}" || return 1
+	git --git-dir "$dir/git" worktree add --no-track -f -b "$branch" "$dest" "$src" || return 1
+	cd "$dest"
+}
+
 darwin && export JUMPHOST="jumpblu"
 ! darwin && export JUMPHOST="shell.cloud.bsocat.net"
 
