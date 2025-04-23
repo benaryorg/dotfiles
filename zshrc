@@ -71,6 +71,7 @@ setopt no_automenu
 setopt bashautolist
 setopt interactive_comments
 setopt histignorespace
+setopt extendedglob
 
 export LESSOPEN=""
 export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
