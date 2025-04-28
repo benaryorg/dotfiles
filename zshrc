@@ -71,7 +71,6 @@ setopt no_automenu
 setopt bashautolist
 setopt interactive_comments
 setopt histignorespace
-setopt extendedglob
 
 export LESSOPEN=""
 export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
@@ -85,6 +84,16 @@ export PATH="${HOME}/.local/sbin:${HOME}/.local/bin:${HOME}/.local/usr/sbin:${HO
 export SHELL="$(which zsh)"
 export VISUAL="$(which vi)"
 export EDITOR="$(which vi)"
+
+# https://www.zsh.org/mla/users/1999/msg00632.html
+function _with_ext_glob()
+{
+	setopt localoptions extendedglob
+	local command="$1"
+	shift
+	$==command $==~*
+}
+alias e='noglob _with_ext_glob '
 
 function repo()
 {
