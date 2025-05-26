@@ -24,3 +24,16 @@
 	date = iso
 [init]
 	defaultBranch = main
+# useful bits for base/origin split:
+#[remote "origin"]
+#	url = ...
+#	fetch = +refs/heads/*:refs/remotes/origin/*
+#[remote "base"]
+#	url = ...
+#	fetch = +refs/heads/*:refs/remotes/base/*
+#	fetch = +refs/pull/*:refs/remotes/pull/*
+#	fetch = +refs/tags/*:refs/remotes/base/tags/*
+
+# useful bits for bare repos and worktrees:
+#[remote "*"]
+#	followRemoteHEAD=never
