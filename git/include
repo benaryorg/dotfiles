@@ -8,8 +8,11 @@
 	user = benaryorg
 [pull]
 	rebase = true
+[feature]
+	manyFiles = true
 [fetch]
 	prune = true
+	writeCommitGraph = true
 [grep]
 	extendedRegexp = true
 [alias]
@@ -22,6 +25,7 @@
 	excludesfile = ~/.gitignore
 [log]
 	date = iso
+	excludeDecoration = refs/remotes/pull
 [init]
 	defaultBranch = main
 # useful bits for base/origin split:
