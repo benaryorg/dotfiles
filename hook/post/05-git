@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+git config --global include.path ${REPO?"repo envvar missing"}/git/include
+

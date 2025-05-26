@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+set -e
+
+git --git-dir ${REPO?"repo envvar missing"}/.git submodule init
+git --git-dir ${REPO?"repo envvar missing"}/.git submodule update
+
