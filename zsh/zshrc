@@ -118,7 +118,8 @@ gnu && alias ls="ls --color -F"
 bsd && alias ls="ls -F"
 darwin && alias ls="ls -FG"
 
-gnu && ulimit -v 16777216
+gnu && ulimit -d 16777216
+gnu && ulimit -m 16777216
 gnu && alias grep="grep --color"
 gnu && alias cal="cal -m"
 
