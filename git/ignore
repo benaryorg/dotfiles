@@ -1,6 +1,9 @@
 # dotenv
 /.env
 
+# branchless git workflow
+/.rebase
+
 #-- vim
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
