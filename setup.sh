@@ -19,7 +19,7 @@ for file in $repo/link/*(DN@); do
 	# if target does not exist or is a symlink, update it to our link
 	if ! test -e $target || test -h $target; then
 		printf "linking '%s' to '%s'\\n" $file $target
-		! test -e $target || rm $target
+		$target(NP:rm:)
 		ln -s $file $target
 	else
 		printf "exists and is not a link: '%s'\\n" $target >&2
