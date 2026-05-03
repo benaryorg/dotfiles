@@ -83,7 +83,8 @@ au BufRead,BufNewFile *.asm set filetype=nasm
 au BufRead,BufNewFile *.nix set filetype=yaml
 au BufRead,BufNewFile *.yaml set filetype=yaml
 au BufRead,BufNewFile *.yml set filetype=yaml
-au BufRead,BufNewFile *.pp  set filetype=puppet
+au BufRead,BufNewFile *.pp set filetype=puppet
+au BufRead,BufNewFile .rebase set filetype=gitrebase
 autocmd Filetype rust set comments^=:///
 
 let g:rainbowbrackets_enable_round_brackets = 1
