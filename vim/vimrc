@@ -66,6 +66,7 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 let g:table_mode_corner="|"
 
 let g:pandoc#formatting#mode = "h"
+let g:pandoc#formatting#textwidth = 10000
 let g:pandoc#spell#enabled = 0
 
 let g:jqplay = { 'autocmds': ['TextChanged', 'TextChangedI', 'InsertLeave'], 'delay': 500 }
